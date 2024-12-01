@@ -1,0 +1,42 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.score {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card {
+  width: 12rem;
+  padding: .5rem, 2rem;
+  margin: 1rem;
+  border: solid black .1rem;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+img.cardPhoto {
+  width: 10rem;
+}
+
+li {
+  list-style-type: none; /* Remove bullets */
+  }
+
+.myCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
