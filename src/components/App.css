@@ -1,0 +1,258 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style-type: none; /* Remove bullets */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+/* Error Page Style */
+.error {
+  font-size: 4rem;
+}
+
+.errorLink {
+  font-size: 1.5rem;
+  width: 15%;
+}
+
+.errorPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+/* Grid style for item pages */
+.myCards {
+  display: grid;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+/* General Styling for Item Card */
+.shopItems {
+  border: .5rem black solid;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  gap: 1rem;
+}
+
+.shopItems input {
+  width: 3rem;
+}
+
+.shopItems:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.cardPhoto {
+  width: 10rem;
+  height: 200px;
+  overflow: hidden;
+  background-color: #f8f8f8;
+}
+
+.cardPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Information Section */
+.myTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.myPrice {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 12px;
+}
+
+/* Button Styling */
+button {
+  display: block;
+  width: 50%;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shopItems {
+    width: 100%;
+  }
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+}
+
+.leftHeader {
+  display: flex;
+  gap: 2rem;
+}
+
+.cart {
+  width: 3rem;
+  height: auto;
+}
+
+.cartCount {
+  position: relative;
+  bottom: .5rem;
+}
+
+.headerCart {
+  gap: .2rem;
+}
+
+/* Contact form container */
+.contactInfo {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eaeaea;
+}
+
+/* Form heading */
+.contactInfo h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+}
+
+/* Form labels */
+.contactInfo label {
+  display: block;
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 8px;
+}
+
+/* Input fields */
+.contactInfo input[type="text"],
+.contactInfo input[type="email"],
+.contactInfo textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333333;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.contactInfo input:focus,
+.contactInfo textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* Textarea */
+.contactInfo textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* Submit button */
+.contactInfo button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.contactInfo button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styles for small screens */
+@media (max-width: 768px) {
+  .contactInfo {
+    margin: 20px;
+    padding: 15px;
+  }
+}
+
+
